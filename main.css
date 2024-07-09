@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+/* --- root --- */
+
+:root {
+  /* fonts */
+  --SF-Pro-Display: 'SF Pro Display', sans-serif;
+  --Proxima-Nova: 'Proxima Nova Condensed', sans-serif;
+  --ccelephant: 'Elephant', sans-serif;
+
+  /* sizing */
+  --title-size: 48px;
+  --sub-title-size: 16px;
+  --secondary-title-size: 32px;
+  --description-size: 24px;
+  --numbers-size: 96px;
+  --navigation-text-size: 24px;
+
+  /* colors */
+  --main-bg-color: #0C1621;
+  --main-text-color: #0C1621;
+  --secondary-bg-color: #F5F5F5;
+  --inverse-text-color: #FFFFFF;
+
+  /* font weight */
+  --light: 200;
+  --normal: 400;
+  --regular: 500;
+  --bold: 700;
+  --black: 900;
+}
+
+/* ------------ */
+
+/* header */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  margin-top: 10px;
+
+
+  .header-container {
+    width: 80%;
+    height: 100%;
+    background: var(--main-bg-color);
+    border-radius: 40px / 50%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px;
+
+      a {
+        font-family: var(--Proxima-Nova);
+        font-size: var(--navigation-text-size);
+        font-weight: var(--regular);
+        color: var(--inverse-text-color);
+      }
+    }
+
+    .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px;
+
+      a {
+        width: 40px;
+        height: 40px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
