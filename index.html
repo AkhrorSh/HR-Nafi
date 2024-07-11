@@ -9,14 +9,16 @@
   <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/elephant" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>HR-Nafi</title>
 </head>
 
 <body>
 
   <header>
-    <div class="header-container">
-      <div class="logo"><img src="/public/icons/Primary.svg" alt="logo"></div>
+    <!-- <div class="header-container">
+      <div class="logo"></div>
       <nav class="navigation">
         <a href="#">Кто мы?</a>
         <a href="#">Что мы делаем?</a>
@@ -28,11 +30,183 @@
         <a href="#"><img src="/public/icons/telegram.svg" alt="icon"></a>
         <a href="#"><img src="/public/icons/facebook.svg" alt="icon"></a>
       </div>
-    </div>
+    </div> -->
   </header>
 
+  <section class="section-1">
+    <div class="container">
+
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="image-slider">
+              <img src="/public/imgs/1.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-slider">
+              <img src="/public/imgs/2.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-slider">
+              <img src="/public/imgs/3.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-slider">
+              <img src="/public/imgs/4.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-2">
+    <div class="container">
+      <div class="title_box">
+        <h1 class="title">Наши партнеры</h1>
+      </div>
+
+      <div class="box">
+        <swiper-container class="mySwiper" space-between="30" centered-slides="true" autoplay-delay="0"
+          autoplay-disable-on-interaction="false">
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/Uzum.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/sag.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/makro.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/mediapark.svg" alt=""></div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/Uzum.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/sag.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/makro.svg" alt=""></div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="elem"><img src="/public/icons/mediapark.svg" alt=""></div>
+          </swiper-slide>
+
+        </swiper-container>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container">
+      <div class="title">
+        <h1>
+          Мы готовим
+          ключевых
+          сотрудников
+        </h1>
+        <button>Связаться с нами</button>
+      </div>
+      <div class="descr">
+        <p>
+          Ценность <span>человеческого капитала</span> в
+          компании не может быть измерена
+          просто <span>в денежном эквиваленте;</span> это
+          <span>основа</span> инноваций, развития и
+          конкурентоспособности, которая
+          делает возможным не только
+          достижение текущих целей, но и
+          <span>формирование будущего</span>
+        </p>
+        <span class="star"></span>
+        <span class="star2"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="container">
+      <div class="title">Кто мы?</div>
+      <p class="descr">
+        Наша команда усрешно реализовала масштабные HR-проекты для компаний
+        - лидеров рынка нефти и газа, металургии, химической и
+        горнодобывающей промышленности, энергетики и коммунальгых услуг,
+        банков и инвестиций, инжиниринга и строительства, HoReCa, туризма и
+        гостиничного бизнеса
+      </p>
+      <button>Подробнее</button>
+      <span class="star3"></span>
+    </div>
+  </section>
+
+  <section class="section-5">
+    <div class="container">
+      <div class="top">
+        <h1 class="title">
+          Чем мы
+          Занимаемся?
+        </h1>
+        <p class="descr">
+          Мы занимаемся полным спектром НР-услуг от консалтинга и подбора персонала до
+          аутсорсинга процессов. HR Nafi находит лучших специалистов для любых компаний.
+        </p>
+      </div>
+
+      <div class="grid_box">
+        <div class="block-1">
+          <div class="text">
+            <h1 id="title">Executive Search</h1>
+            <p id="descr">- это практика эксклюзивного поиска топ-руководителей, стратегически важных сотрудников и уникальных специалистов.</p>
+          </div>
+          <div class="img"></div>
+        </div>
+        <div class="block-2">
+          <div class="text">
+            <h1 id="title">ІТ-подбор</h1>
+            <p id="descr">- это услуга по поиску и подбору специалистов в области информационных технологий, аналитики и разработки.</p>
+          </div>
+          <div class="img"></div>
+        </div>
+        <div class="block-3">
+          <div class="text">
+            <h1 id="title">НР-консалтинг</h1>
+            <p id="descr">- поможем компаниям в оптимизации процессов по работе с персоналом.</p>
+          </div>
+          <div class="img"></div>
+        </div>
+        <div class="block-4">
+          <div class="text">
+            <h1 id="title">Обучение
+              персонала</h1>
+            <p id="descr">- это ключевые аспекты управления
+              человеческими ресурсами, направленные на повышение квалификации и профессионального
+              роста сотрудников внутри организации.</p>
+          </div>
+          <div class="img"></div>
+        </div> 
+      </div>
+    </div>
+
+  </section>
 
 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 
