@@ -32,6 +32,8 @@ const helpers = {
 			social_media.append(a)
 		}
 
+		logo.onclick = () => { location.assign("/") }
+
 		place.append(header_container)
 		header_container.append(logo, navigation, social_media)
 	}

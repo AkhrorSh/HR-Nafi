@@ -1,7 +1,7 @@
 export let navigation_array = [
 	{
 		title: "Кто мы?",
-		href: "#"
+		href: "/pages/who_are_we/"
 	},
 	{
 		title: "Что мы делаем?",

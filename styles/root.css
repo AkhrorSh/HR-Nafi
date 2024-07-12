@@ -1,0 +1,31 @@
+/* --- root --- */
+
+:root {
+	/* fonts */
+	--SF-Pro-Display: 'SF Pro Display', sans-serif;
+	--Proxima-Nova: 'Proxima Nova', sans-serif;
+	--ccelephant: 'Elephant', sans-serif;
+  
+	/* sizing */
+	--title-size: 56px;
+	--sub-title-size: 24px;
+	--secondary-title-size: 48px;
+	--description-size: 32px;
+	--numbers-size: 96px;
+	--navigation-text-size: 32px;
+  
+	/* colors */
+	--main-bg-color: #0C1621;
+	--main-text-color: #0C1621;
+	--secondary-bg-color: #F5F5F5;
+	--inverse-text-color: #FFFFFF;
+  
+	/* font weight */
+	--light: 200;
+	--normal: 400;
+	--regular: 500;
+	--bold: 700;
+	--black: 900;
+  }
+  
+  /* ------------ */

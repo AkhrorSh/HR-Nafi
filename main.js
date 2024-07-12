@@ -22,3 +22,15 @@ const swiper = new Swiper('.swiper', {
 		clickable: true,
 	},
 });
+
+const revuesSwiper = new Swiper('.revuesSwiper', {
+	slidesPerView: 2,
+	spaceBetween: 10,	
+	loop: true,
+	speed: 500,
+
+	navigation: {
+		nextEl: '.next',
+		prevEl: '.prev',
+	},
+});
