@@ -1,181 +1,132 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	font-family: Proxima Nova, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #0c1621;
+	position: relative;
 }
 
-input,
-button,
-textarea {
-  font-family: inherit;
+.wrapper-rects img {
+  top: 0;
+	position: absolute;
+	z-index: -1;
 }
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*--------------------*/
-
-/* --- root --- */
-
-:root {
-  /* fonts */
-  --SF-Pro-Display: 'SF Pro Display', sans-serif;
-  --Proxima-Nova: 'Proxima Nova Condensed', sans-serif;
-  --ccelephant: 'Elephant', sans-serif;
-
-  /* sizing */
-  --title-size: 48px;
-  --sub-title-size: 16px;
-  --secondary-title-size: 32px;
-  --description-size: 24px;
-  --numbers-size: 96px;
-  --navigation-text-size: 24px;
-
-  /* colors */
-  --main-bg-color: #0C1621;
-  --main-text-color: #0C1621;
-  --secondary-bg-color: #F5F5F5;
-  --inverse-text-color: #FFFFFF;
-
-  /* font weight */
-  --light: 200;
-  --normal: 400;
-  --regular: 500;
-  --bold: 700;
-  --black: 900;
-}
-
-/* ------------ */
-
-/* header */
 
 header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  margin-top: 10px;
-
-
-  .header-container {
-    width: 80%;
-    height: 100%;
-    background: var(--main-bg-color);
-    border-radius: 40px / 50%;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-
-    .navigation {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 10px;
-
-      a {
-        font-family: var(--Proxima-Nova);
-        font-size: var(--navigation-text-size);
-        font-weight: var(--regular);
-        color: var(--inverse-text-color);
-      }
-    }
-
-    .social-media {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      padding: 10px;
-
-      a {
-        width: 40px;
-        height: 40px;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	padding: 10px 20px;
+	background-color: transparent;
+	margin: 0 auto;
+  padding-top: 40px;
 }
 
+.logo img {
+	width: 135px;
+	height: 65px;
+	flex-shrink: 0;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.nav-menu ul {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li a {
+	color: #fff;
+	font-family: Proxima Nova;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.wrapper-menu {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.social-media {
+	display: flex;
+	gap: 10px;
+}
+
+.social-media a {
+	display: flex;
+	width: 24px;
+	height: 24px;
+}
+
+.lang .Rus {
+	display: flex;
+	color: white;
+	align-items: center;
+}
+
+.Rus {
+	display: flex;
+	gap: 5px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.swiper {
+	width: 90%;
+  margin: 0 auto;
+}
+
+.swiper img {
+  margin: 20px 0;
+	width: 100%;
+  height: 533px;
+	object-fit: cover;
+	border-radius: 20px;
+  
+}
+
+.partners {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.partners-logos img {
+	height: 50px;
+	margin: 0 10px;
+}
+
+.about {
+	padding: 20px;
+}
+
+.highlight {
+	font-weight: bold;
+	color: #ffd700;
+}
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #333;
+	color: white;
+}
