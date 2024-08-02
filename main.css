@@ -280,6 +280,7 @@ nav ul li a {
 	border-radius: 5px;
 	margin-top: 85px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .video-container {
@@ -352,28 +353,24 @@ nav ul li a {
 
 #care {
 	width: 24%;
-	height: 199px;
 	border-radius: 20px;
 	border: 1px #028fdf solid;
 }
 
 #confidence {
 	width: 24%;
-	height: 199px;
 	border-radius: 20px;
 	border: 1px #028fdf solid;
 }
 
 #result {
 	width: 24%;
-	height: 199px;
 	border-radius: 20px;
 	border: 1px #028fdf solid;
 }
 
 #loyalty {
 	width: 24%;
-	height: 199px;
 	border-radius: 20px;
 	border: 1px #028fdf solid;
 }
@@ -523,14 +520,14 @@ nav ul li a {
 	border: 1px #028fdf solid;
 	border-radius: 20px;
 	width: 49%;
-	height: 198px;
+	height: 210px;
 }
 
 #consultation {
 	border: 1px #028fdf solid;
 	border-radius: 20px;
 	width: 49%;
-	height: 198px;
+	height: 210px;
 	background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.5) 0%,
@@ -559,6 +556,7 @@ nav ul li a {
 	width: 150px;
 	height: 44px;
 	margin-top: 8px;
+	text-decoration: none;
 }
 
 .arrow-text img {
@@ -772,7 +770,7 @@ nav ul li a {
 footer {
 	display: flex;
 	justify-content: center;
-	width: 90%;
+	/* width: 90%; */
 	color: white;
 	padding: 40px;
 	margin: 0 auto;
@@ -1220,7 +1218,7 @@ footer {
 		width: 100%;
 		height: auto;
 	}
-	
+
 }
 
 @media screen and (max-width: 576px) {
