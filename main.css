@@ -1,3 +1,8 @@
+
+:root {
+    scroll-behavior: smooth
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -18,14 +23,32 @@ body {
 }
 
 header {
+	width: 100%;
+	background-color: transparent;
+	padding-top: 40px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+.header-super-wrapper {
+	height: 120px;
+}
+
+
+.header-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	padding: 10px 20px;
 	background-color: transparent;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding: 10px 20px;
+	width: 80%;
+
+}
+
+main {
+	padding-top: 20px;
 }
 
 .swiper-logos .swiper-slide img {
@@ -280,8 +303,12 @@ nav ul li a {
 	border-radius: 5px;
 	margin-top: 85px;
 	cursor: pointer;
+}
+
+.contact-container a{
 	text-decoration: none;
 }
+
 
 .video-container {
 	display: flex;
@@ -819,6 +846,7 @@ footer {
 
 .contacts-wrapper p {
 	margin: 1px;
+	
 
 	color: #fff;
 
@@ -835,6 +863,10 @@ footer {
 .contacts-wrapper img {
 	width: 37px;
 	height: 37px;
+}
+
+.contact a{
+	text-decoration: none;
 }
 
 .wrappers-two {
