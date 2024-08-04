@@ -267,9 +267,9 @@ nav ul li a {
 	color: white;
 }
 
-.employees h1 b {
+/* .employees h1 b {
 	color: grey;
-}
+} */
 
 .light-text {
 	width: 95%;
@@ -287,7 +287,7 @@ nav ul li a {
 
 .light-text p {
 	font-family: Proxima Nova;
-	color: grey;
+	color: white;
 	font-weight: 400;
 	font-size: 16px;
 	margin: 10px 0;
@@ -825,6 +825,8 @@ footer {
 	margin: 0px 0px 20px 0px;
 }
 
+
+
 .info-wrapper p {
 	margin: 3px;
 
@@ -834,6 +836,11 @@ footer {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+
+.info-wrapper a {
+	text-decoration: none;
+	color: white;
 }
 
 .info-wrapper {
@@ -846,7 +853,7 @@ footer {
 
 .contacts-wrapper p {
 	margin: 1px;
-	
+
 
 	color: #fff;
 
