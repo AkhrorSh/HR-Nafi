@@ -44,7 +44,11 @@ header {
 	margin: 0 auto;
 	padding: 10px 20px;
 	width: 80%;
-
+	border-radius: 15px;
+	border: 1px solid rgb(27, 154, 238);
+	background: rgba(12, 22, 33, 0.20);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -1266,6 +1270,11 @@ footer {
 		align-items: center;
 	}
 
+	.swiper .swiper-slide > img {
+		height: 430px;
+	}
+
+
 	.logo-wrapper {
 		height: auto;
 		width: 100%;
@@ -1306,6 +1315,7 @@ footer {
 	.swiper-team .swiper-slide img {
 		width: 100%;
 	}
+
 
 	.partners-wrapper {
 		flex-direction: column;
@@ -1407,15 +1417,25 @@ footer {
 		padding: 40px 0;
 	}
 
+	.header-wrapper {
+		width: 100%;
+	}
+
+
 	.sidebar {
 		width: 100%;
 	}
+
+
+
 }
 
 @media screen and (max-width: 320px) {
+
 	#teaching-employees {
 		height: auto;
 	}
+
 
 	#teaching-employees img {
 		width: 100%;

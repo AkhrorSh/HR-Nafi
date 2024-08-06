@@ -5,6 +5,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const swiper = new Swiper(".swiper", {
 	spaceBetween: 30,
+	modules: [Autoplay],
+	autoplay: {
+		delay: 1500,
+	},
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -73,7 +77,7 @@ const swiperLogos = new Swiper(".swiper-logos", {
 	spaceBetween: 30,
 	modules: [Autoplay],
 	autoplay: {
-		delay: 1000,
+		delay: 1500,
 	},
 	loop: true,
 
