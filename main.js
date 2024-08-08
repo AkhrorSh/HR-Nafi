@@ -72,7 +72,7 @@ const swiperReviews = new Swiper(".swiper-reviews", {
 });
 
 const swiperLogos = new Swiper(".swiper-logos", {
-	slidesPerView: 3,
+	slidesPerView: 4,
 	slidesPerGroup: 1,
 	spaceBetween: 30,
 	modules: [Autoplay],
@@ -81,23 +81,23 @@ const swiperLogos = new Swiper(".swiper-logos", {
 	},
 	loop: true,
 
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-		},
-		768: {
-			slidesPerView: 1,
-		},
-		1024: {
-			slidesPerView: 2,
-		},
-		1440: {
-			slidesPerView: 3,
-		},
-		1920: {
-			slidesPerView: 3,
-		},
-	},
+	// breakpoints: {
+	// 	320: {
+	// 		slidesPerView: 1,
+	// 	},
+	// 	768: {
+	// 		slidesPerView: 1,
+	// 	},
+	// 	1024: {
+	// 		slidesPerView: 2,
+	// 	},
+	// 	1440: {
+	// 		slidesPerView: 3,
+	// 	},
+	// 	1920: {
+	// 		slidesPerView: 3,
+	// 	},
+	// },
 });
 
 
