@@ -7,7 +7,7 @@ const swiper = new Swiper(".swiper", {
 	spaceBetween: 30,
 	modules: [Autoplay],
 	autoplay: {
-		delay: 1500,
+		delay: 3000,
 	},
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -77,42 +77,41 @@ const swiperLogos = new Swiper(".swiper-logos", {
 	spaceBetween: 30,
 	modules: [Autoplay],
 	autoplay: {
-		delay: 1500,
+		delay: 2500,
 	},
 	loop: true,
 
-	// breakpoints: {
-	// 	320: {
-	// 		slidesPerView: 1,
-	// 	},
-	// 	768: {
-	// 		slidesPerView: 1,
-	// 	},
-	// 	1024: {
-	// 		slidesPerView: 2,
-	// 	},
-	// 	1440: {
-	// 		slidesPerView: 3,
-	// 	},
-	// 	1920: {
-	// 		slidesPerView: 3,
-	// 	},
-	// },
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 1,
+		},
+		1024: {
+			slidesPerView: 2,
+		},
+		1440: {
+			slidesPerView: 3,
+		},
+		1920: {
+			slidesPerView: 4,
+		},
+	},
 });
 
-
-const sidebar = document.querySelector('.sidebar');
-const sidebarWrapper = document.querySelector('.sidebar-wrapper');
-const close = document.querySelector('.close');
-const open = document.querySelector('.open');
+const sidebar = document.querySelector(".sidebar");
+const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+const close = document.querySelector(".close");
+const open = document.querySelector(".open");
 
 open.onclick = () => {
-	open.classList.toggle('active');
-	close.classList.toggle('active');
-	sidebar.classList.toggle('active');
-}
+	open.classList.toggle("active");
+	close.classList.toggle("active");
+	sidebar.classList.toggle("active");
+};
 close.onclick = () => {
-	close.classList.toggle('active');
-	open.classList.toggle('active');
-	sidebar.classList.toggle('active');
-}
+	close.classList.toggle("active");
+	open.classList.toggle("active");
+	sidebar.classList.toggle("active");
+};

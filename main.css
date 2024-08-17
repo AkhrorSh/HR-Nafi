@@ -1,6 +1,5 @@
-
 :root {
-    scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
 
 * {
@@ -35,7 +34,6 @@ header {
 	height: 120px;
 }
 
-
 .header-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -46,19 +44,10 @@ header {
 	width: 80%;
 	border-radius: 15px;
 	border: 1px solid rgb(27, 154, 238);
-	background: rgba(12, 22, 33, 0.20);
+	background: rgba(12, 22, 33, 0.2);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
-
-/* .box-shadow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	box-shadow: 200px 20px 400px -100px rgba(0, 0, 0, 0.5);
-} */
 
 main {
 	padding-top: 20px;
@@ -154,30 +143,32 @@ nav ul li a {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background-color: #0c1621;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 15px;
+	background: rgba(12, 22, 33, 0.2);
+	backdrop-filter: blur(550px);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	transition: .4s;
+	transition: 0.4s;
 }
 
 .dropdown-item {
 	text-align: left;
 	margin-top: 10px;
 	text-decoration: none;
-  }
-  
-  
+}
+
 .Rus:hover .dropdown {
 	height: 73px;
 	border-radius: 4px;
 	padding: 0px 5px 0px 0px;
-  }
-
+}
 
 .swiper {
 	width: 80%;
+	height: 533px;
 	margin: 20px auto;
 	border-radius: 20px;
+	overflow: hidden;
 }
 
 .swiper-slide {
@@ -294,6 +285,30 @@ nav ul li a {
 	flex-shrink: 0;
 }
 
+.shadow {
+	position: relative;
+	width: 100%;
+	height: 400px; /* Задайте высоту контейнера в зависимости от вашего изображения */
+}
+
+.shadow img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Сохраняет соотношение сторон изображения */
+}
+
+.shadow::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #000000 0%, #000000 50%);
+	opacity: 0.2; /* Регулирует прозрачность градиента */
+	pointer-events: none; /* Позволяет кликать на изображение сквозь градиент */
+}
+
 .employees-container {
 	display: flex;
 	/* align-items: end; */
@@ -349,10 +364,9 @@ nav ul li a {
 	cursor: pointer;
 }
 
-.contact-container a{
+.contact-container a {
 	text-decoration: none;
 }
-
 
 .video-container {
 	display: flex;
@@ -624,7 +638,7 @@ nav ul li a {
 .arrow-text {
 	display: flex;
 	padding: 10px 10px 10px 0;
-	width: 150px;
+	width: 100%;
 	height: 44px;
 	margin-top: 8px;
 	text-decoration: none;
@@ -734,7 +748,7 @@ nav ul li a {
 	height: 282px;
 }
 
-#fifth {
+/* #fifth {
 	width: 217px;
 	height: 282px;
 }
@@ -742,7 +756,7 @@ nav ul li a {
 #sixth {
 	width: 217px;
 	height: 282px;
-}
+} */
 
 .next-buttons {
 	display: flex;
@@ -810,7 +824,6 @@ nav ul li a {
 .reviews-wrapper .swiper-slide img {
 	width: 100%;
 	height: 100%;
-
 	object-fit: cover;
 }
 
@@ -869,8 +882,6 @@ footer {
 	margin: 0px 0px 20px 0px;
 }
 
-
-
 .info-wrapper p {
 	margin: 3px;
 
@@ -898,7 +909,6 @@ footer {
 .contacts-wrapper p {
 	margin: 1px;
 
-
 	color: #fff;
 
 	font-size: 16px;
@@ -916,7 +926,7 @@ footer {
 	height: 37px;
 }
 
-.contact a{
+.contact a {
 	text-decoration: none;
 }
 
@@ -927,6 +937,10 @@ footer {
 
 .links {
 	margin-top: 20px;
+}
+
+.links a {
+	text-decoration: none;
 }
 
 .conclusion {
@@ -1134,6 +1148,10 @@ footer {
 		gap: 15px;
 	}
 
+	.sidebar-wrapper {
+		height: 50%;
+	}
+
 	.partners-logos {
 		justify-content: space-between;
 		gap: 30px;
@@ -1183,6 +1201,10 @@ footer {
 @media screen and (max-width: 976px) {
 	header .nav-menu ul {
 		display: none;
+	}
+
+	.sidebar-wrapper {
+		height: 50%;
 	}
 
 	.open {
@@ -1266,6 +1288,14 @@ footer {
 		gap: 25px;
 	}
 
+	.sidebar-wrapper {
+		height: 50%;
+	}
+
+	.swiper .swiper-slide > img {
+		height: 500px;
+	}
+
 	.sidebar {
 		width: 50%;
 	}
@@ -1301,7 +1331,6 @@ footer {
 		width: 100%;
 		height: auto;
 	}
-
 }
 
 @media screen and (max-width: 576px) {
@@ -1311,9 +1340,18 @@ footer {
 	}
 
 	.swiper .swiper-slide > img {
-		height: 430px;
+		height: 500px;
 	}
 
+	.sidebar-wrapper {
+		height: 50%;
+	}
+
+	.logo-image img {
+		width: 150px;
+		height: 75px;
+		margin: 0;
+	}
 
 	.logo-wrapper {
 		height: auto;
@@ -1355,7 +1393,6 @@ footer {
 	.swiper-team .swiper-slide img {
 		width: 100%;
 	}
-
 
 	.partners-wrapper {
 		flex-direction: column;
@@ -1461,21 +1498,23 @@ footer {
 		width: 100%;
 	}
 
-
 	.sidebar {
 		width: 100%;
 	}
-
-
-
 }
 
 @media screen and (max-width: 320px) {
-
 	#teaching-employees {
 		height: auto;
 	}
 
+	.swiper .swiper-slide > img {
+		height: 500px;
+	}
+
+	.sidebar-wrapper {
+		height: 50%;
+	}
 
 	#teaching-employees img {
 		width: 100%;
